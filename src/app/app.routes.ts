@@ -8,8 +8,8 @@ const APP_ROUTES: Routes = [
 	{ path: 'home', component: HomeComponent },
 	{ path: 'about', component: AboutComponent },
 	{ path: 'heroes', component: HeroesComponent },
-	//con este 
-	{ path: 'heroes/heroe/:id', component: HeroeComponent },
+	//con este agrego el id de la pagina de la ruta a la que me quiero mover
+	{ path: 'heroe/:id', component: HeroeComponent },
 	{ path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 
