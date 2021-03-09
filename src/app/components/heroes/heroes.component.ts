@@ -20,15 +20,8 @@ export class HeroesComponent implements OnInit {
   heroes:Heroe[]=[];
   //primero se ejecuta el constructor y luego el ngOnInit
   //en el arreglo heroes le setea lo que devuelve la funcion de heroes en el ts de servicio
-  ngOnInit(): void {
-    
-    const navigation = this.router.getCurrentNavigation();
-    if(navigation?.extras?.state?.value){
-      this.heroes = navigation?.extras?.state?.value;
-    }else{
+  ngOnInit(): void {  
       this.heroes = this.heroesService.getHeroes();
-    }
-
   }
 
   verHeroe(idx:number){

@@ -18,7 +18,6 @@ export class HeroeComponent implements OnInit {
 
       //este id es el mismo id que se ejecuta en las rutas. app.routes.ts, coje la ruta el activeRoute
       this.heroe = this.heroeService.getHero(params['id']);
-      console.log(this.heroe);
     })
   }
 
